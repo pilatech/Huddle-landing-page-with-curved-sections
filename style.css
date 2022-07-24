@@ -1,4 +1,7 @@
 :root {
+
+ font-size: 62.5%;
+
  --space-x-large: 12rem;
  --space-large: 10rem;
  --space-medium: 6rem;
@@ -14,4 +17,221 @@
 
 --color-footer: hsl(192, 100%, 9%);
 --color-light: hsl(207, 100%, 98%);
+}
+
+body {
+ font-size: 1.8rem;
+ font-family: var(--body-font);
+ color: var(--color-footer);
+ text-align: center;
+ line-height: 1.6;
+}
+
+img {
+ max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+ font-family: var(--head-font);
+ line-height: 1.4;
+}
+
+.container {
+ width: 98%;
+ max-width: 40rem;
+ margin-inline: auto;
+}
+
+.nav {
+ display: flex;
+ justify-content: space-between;
+ padding-block: var(--space-small);
+ align-items: center;
+ margin-bottom: var(--space-large);
+}
+
+.logo {
+ width: 12rem;
+}
+
+.btn--nav {
+  text-decoration: none;
+  color: var(--color-pop);
+  font-size: 1.3rem;
+  border: 1px solid;
+  border-radius: 5rem;
+  padding: 6px 2rem;
+}
+
+.hero {
+ margin-bottom: var(--space-x-large)
+}
+
+.title {
+ margin-bottom: var(--space-small);
+}
+
+.hero__text {
+ margin-bottom: var(--space-medium);
+}
+
+.btn {
+ color: #fff;
+ background: var(--color-pop);
+ text-decoration: none;
+ font-size: 1.4rem;
+ padding: 1.5rem 3rem;
+ border-radius: 5rem;
+ box-shadow: 0 5px 1rem rgba(0, 0, 0, .1);
+}
+
+.stats {
+ margin-block: var(--space-x-large);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: var(--space-medium);
+}
+
+.stat {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ gap: 5px;
+}
+
+
+.stat__number {
+ font-size: 5rem;
+}
+
+.stat__icon {
+ width: 3rem;
+}
+
+.stat__detail {
+ font-size: .1.4rem;
+}
+
+.section {
+ display: flex;
+ flex-direction: column-reverse;
+ margin-bottom: var(--space-x-large);
+}
+
+.section--highlighted-1 {
+ padding-top: calc(var(--space-x-large) * 2.1);
+ padding-bottom: calc(var(--space-x-large) + var(--space-medium));
+  background: url(images/bg-section-top-mobile-1.svg), url(images/bg-section-bottom-mobile-1.svg), linear-gradient(var(--color-light), var(--color-light));
+  background-repeat: no-repeat;
+  background-size: 100%, 100%, 100% 78%;
+  background-position: top, 0 94%, 0 center;
+}
+
+.section--highlighted-2 {
+ padding-top: calc(var(--space-x-large) * 2.1);
+ padding-bottom: calc(var(--space-x-large) + var(--space-medium));
+  background: url(images/bg-section-top-mobile-2.svg), url(images/bg-section-bottom-mobile-2.svg), linear-gradient(var(--color-light), var(--color-light));
+  background-repeat: no-repeat;
+  background-size: 100%, 100%, 100% 78%;
+  background-position: top, 0 100%, 0 center;
+}
+
+.cta {
+ padding-bottom: var(--space-x-large);
+}
+
+.cta__title {
+ margin-bottom: var(--space-medium);
+}
+
+.footer {
+ background: url(images/bg-footer-top-mobile.svg), linear-gradient(var(--color-footer), var(--color-footer));
+ background-repeat: no-repeat;
+ background-size: 100%, 100% 90%;
+ background-position: top ,center;
+ color: #fff;
+ padding-top: var(--space-x-large);
+ padding-bottom: var(--space-medium);
+ text-align: left;
+ padding-inline: 2rem;
+}
+
+.footer__sections {
+ display: flex;
+ flex-direction: column-reverse;
+ gap: var(--space-large);
+}
+
+.footer__title {
+ text-transform: uppercase;
+ font-family: var(--body-font);
+}
+
+
+.footer__text {
+ font-size: 1.5rem;
+}
+
+.footer__logo {
+ filter: brightness(0) invert();
+ width: 18rem;
+}
+
+.footer__text--phone,
+.footer__text--email {
+ display: flex;
+ align-items: center;
+}
+
+.footer__text--phone {
+ margin-top: var(--space-medium);
+}
+
+.footer__text--phone::before {
+ content: url(images/icon-phone.svg);
+ margin-right: 1rem;
+}
+
+.footer__text--email::before {
+ content: url(images/icon-email.svg);
+ margin-right: 1rem;
+}
+
+.social {
+ display: flex;
+ align-items: center;
+ margin-block: var(--space-medium);
+}
+
+.social__icon {
+ margin-inline: 1rem;
+ font-style: normal;
+ font-size: 3rem;
+}
+
+.social__icon:first-of-type {
+ margin-left: 0;
+}
+
+.form--newsletter {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-end;
+ gap: 2rem;
+ margin-top: var(--space-small);
+}
+
+.form__input--newsletter {
+ width: 90%;
+ border-radius: 5px;
+ border: none;
+ padding: 1.5rem;
+}
+
+.btn--newsletter {
+ border-radius: 5px;
+ cursor: pointer;
 }
