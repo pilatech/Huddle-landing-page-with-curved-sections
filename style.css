@@ -1,0 +1,17 @@
+:root {
+ --space-x-large: 12rem;
+ --space-large: 10rem;
+ --space-medium: 6rem;
+ --space-small: 3rem;
+ --space-x-small: 2rem;
+
+ --body-font: 'Open Sans', sans-serif;
+ --head-font: 'Poppins', sans-serif;
+
+ --color-pop: hsl(322, 100%, 66%);
+ --color-pop-active: hsl(321, 100%, 78%);
+ --color-pop-alt: hsl(0, 100%, 63%);
+
+--color-footer: hsl(192, 100%, 9%);
+--color-light: hsl(207, 100%, 98%);
+}
