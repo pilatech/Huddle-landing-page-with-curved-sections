@@ -252,8 +252,8 @@ h3 {
  }
  
  .container {
-  width: 98%;
-  max-width: 98%;
+  width: 100%;
+  max-width: 100%;
   margin-inline: auto;
  }
  
@@ -339,7 +339,7 @@ h3 {
  .footer {
   background: url(images/bg-footer-top-desktop.svg), linear-gradient(var(--color-footer), var(--color-footer));
   background-repeat: no-repeat;
-  background-size: 100%, 100% 78%;
+  background-size: 100%, 100% 77.8%;
   background-position: top ,bottom;
   color: #fff;
   padding-top: calc(var(--space-x-large) * 2);
